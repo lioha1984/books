@@ -6,4 +6,6 @@ import telran.java2022.book.model.Author;
 
 public interface AuthorRepository extends CrudRepository<Author, String> {
 
+	Author findByName(String name);
+
 }
